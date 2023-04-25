@@ -1,0 +1,23 @@
+/* Styles for screens less than 1000px wide */
+
+/* Center the home image */
+.home-img {
+  text-align: center;
+}
+
+/* Make sure the home image doesn't overflow its container */
+.home-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Center the home text */
+.home-text {
+  text-align: center;
+}
+
+/* Display the navigation buttons as blocks with some margin */
+.btn {
+  display: block;
+  margin: 1em auto;
+}

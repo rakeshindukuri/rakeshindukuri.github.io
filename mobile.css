@@ -1,23 +1,22 @@
-/* Styles for screens less than 1000px wide */
+/* CSS for mobile devices */
+@media (max-width: 1000px) {
+    .home-img {
+        text-align: center;
+        margin-top: 10px; /* add margin to push the image down */
+    }
 
-/* Center the home image */
-.home-img {
-  text-align: center;
-}
+    .home-img img {
+        max-width: 144px; /* set the maximum width of the image to 144px */
+        height: auto;
+    }
 
-/* Make sure the home image doesn't overflow its container */
-.home-img img {
-  max-width: 100%;
-  height: auto;
-}
+    .home-text {
+        text-align: center;
+        margin-top: 10px; /* add margin to push the text down */
+    }
 
-/* Center the home text */
-.home-text {
-  text-align: center;
-}
-
-/* Display the navigation buttons as blocks with some margin */
-.btn {
-  display: block;
-  margin: 1em auto;
+    .btn {
+        display: block;
+        margin: 1em auto;
+    }
 }

@@ -7,11 +7,74 @@
     p {
         margin: 0 50px;
     }
+    header {
+		  background-color: #fff;
+		  color: #000;
+		  padding: 20px;
+		  text-align: center;
+		}
+		footer {
+		  background-color: #f2f2f2;
+		  padding: 10px;
+		  text-align: center;
+		}
+
+		footer p {
+		  margin: 0;
+		}
+		nav {
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  background-color: #fff;
+		  color: #000000;
+		  padding: 2px;
+		}
+
+		nav ul {
+		  display: flex;
+		  list-style: none;
+			margin: 0;
+			padding: 0;
+			justify-content: center;
+			align-items: center;
+		}
+
+		nav ul li {
+		  margin-right: 20px;
+		}
+
+		nav a {
+		  color: #000;
+		  text-decoration: none;
+			font-size: 25px;
+		}
+
+		nav a:hover {
+		  text-decoration: underline;
+		}
+
+		header nav ul {
+		  display: table;
+		  margin: 0 auto;
+		}
 </style>
   <head>
     <title>About Me</title>
   </head>
   <body>
+  <header style="height: 55px">
+  <h1>Rakesh's Portfolio</h1>
+  <nav>
+    <ul style="text-align: center; display: flex;">
+      <li style="margin-right: 1em;"><a href="pilot.html">Home</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+</header>
+  <br>
+  <br>
+    <br>
   <div style="text-align: center;">
     <img src="https://rakindukuri.files.wordpress.com/2023/04/pic1.png" alt="Image 1" width="222" height="222">
     <img src="https://rakindukuri.files.wordpress.com/2023/04/pic.jpeg" alt="Image 2" width="222" height="222">
@@ -30,5 +93,11 @@
     <p>Here's a link to my <a href="https://www.notion.so/Favorite-Songs-OST-0bd6f1e455304bb6afe30087ed7ed4f0?pvs=4">Favorite Songs & OST</a>, <a href="https://www.notion.so/Favorite-Quotes-Quotations-ceaee4b86def47d99dd8e992cf345799?pvs=4">Favorite Quotes/Quotations</a>, and <a href="https://www.notion.so/Favorite-Papers-Articles-f54d2b3436634c01923841d1fafc7fb0?pvs=4">Favorite Articles/ Papers</a>.</p>
     <br>
     <p>If you want to know even more about me, feel free to <a href="">contact me</a>!</p>
+  <br>
+  <br>
+    <br>
   </body>
+<footer class="footer">
+		<p> 2023 Rakesh Indukuri. All rights reserved.</p>
+	</footer>
 </html>

@@ -731,4 +731,17 @@ button:hover {
   background-color: #3e8e41;
 }
 
+.bio-tool-box a:hover {
+  pointer-events: auto;
+}
+.bio-tool-box a {
+  z-index: 1;
+}
+.bio-tool-box a {
+  position: relative;
+  top: 10px; /* adjust the top and/or left values to position the link */
+  left: 10px;
+}
+
+
 }

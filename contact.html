@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Me</title>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+          max-width: 800px;
+          margin: 125px auto;
+          padding: 30px;
+          background-color: #f2f2f2;
+        }
+
+        h1 {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+        }
+
+        label {
+          margin-bottom: 10px;
+        }
+
+        input {
+          padding: 10px;
+          margin-bottom: 20px;
+          border: none;
+          border-radius: 5px;
+          margin-right: 5px;
+          margin-left: 5px;
+          background-color: #fff;
+        }
+
+        input:focus {
+          outline: none;
+          box-shadow: 0px 0px 5px #4CAF50;
+        }
+
+        #name {
+          background-color: #bcd4e6;
+        }
+
+        #email {
+          background-color: #bcd4e6;
+        }
+
+        #subject {
+          background-color: #bcd4e6;
+        }
+
+        button {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+
+        button:hover {
+          background-color: #3e8e41;
+        }
+
+        .socials {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+
+        .socials a {
+          display: inline-block;
+          margin-right: 10px;
+          text-decoration: none;
+          color: #333;
+          border: 1px solid #333;
+          padding: 5px 10px;
+          border-radius: 5px;
+          transition: all 0.3s ease;
+        }
+
+        .socials a:hover {
+          background-color: #333;
+          color: #fff;
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<h1>Contact Me - Let's Talk!</h1>
+    		<div class="socials">
+			<a href="https://twitter.com/rakeshindukuri">Twitter</a>
+			<a href="https://www.instagram.com/rakesh_indukuri/">Instagram</a>
+			<a href="https://www.linkedin.com/in/rakesh-indukuri/">LinkedIn</a>
+			<a href="https://github.com/rakeshindukuri">GitHub</a>
+            <a href="mailto:rakindukuri@gmail.com">E-mail</a>
+		</div>
+    <br>
+    <br>
+		<form action="submit-form.php" method="POST">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="subject">Subject:</label>
+			<input type="text" id="subject" name="subject" required>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>September Recap Newsletter</title>
+</head>
+<style>
+  /* CSS code for styling the September Recap Newsletter */
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .article {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .article:hover {
+    transform: translateY(-5px);
+  }
+
+  .article h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .additional-content {
+    display: none;
+  }
+
+  .article.clicked .additional-content {
+    display: block;
+  }
+
+  .center-align {
+    text-align: center;
+  }
+
+  /* Custom styles for specific sections */
+
+  .header img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .article:nth-child(odd) {
+    background-color: #f9f9f9;
+    color: #555;
+  }
+
+  .article:nth-child(even) {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+</style>
+<body>
+  <h1>September Recap Newsletter</h1>
+
+  <div class="header">
+    <!--<img src="newsletter_header.jpg" alt="Newsletter Header">-->
+  </div>
+
+  <div class="article" onclick="toggleContent(this)">
+    <h2>Journal Club Recap</h2>
+    <div class="additional-content">
+      <h2>Research Article Topic & Title</h2>
+      <p><strong>Authors:</strong> Author1, Author2, Author3;      <strong>Journal:</strong> Journal Name;      <strong>Publication Date:</strong> Month Year</p>
+      <h3>Objective:</h3>
+      <p>Yes.</p>
+      <h3>Methods:</h3>
+      <p>Yes Yes.</p>
+      <h3>Results:</h3>
+      <p>Yes Yes Yes.</p>
+      <h3>Conclusions:</h3>
+      <p>Yes Yes Yes Yes.</p>
+      <h3>Discussion:</h3>
+      <p>Kaizoku ou ni ore wa naru!</p>
+    </div>
+  </div>
+
+<div class="article" onclick="toggleContent(this)">
+  <h2>Journal Club - Sept</h2>
+  <div class="additional-content">
+    <p>Topic: Transformers</p>
+    <p>Paper in question: Attention is all you need.</p>
+    <p>Discussion:</p>
+  </div>
+</div>
+
+<div class="article" onclick="toggleContent(this)">
+  <h2>Bioinformatics Recap</h2>
+  <div class="additional-content">
+    <p>[Paste article info and link]</p>
+  </div>
+</div>
+
+<div class="article" onclick="toggleContent(this)">
+  <h2>Industry News</h2>
+  <div class="additional-content">
+    <p>[Top 5 news articles this month]</p>
+  </div>
+</div>
+
+<div class="article" onclick="toggleContent(this)">
+  <h2>Highlights Research Papers</h2>
+  <div class="additional-content">
+    <p>[Top papers published this month]</p>
+  </div>
+</div>
+
+<div class="article" onclick="toggleContent(this)">
+  <h2>Spotlight on a Tool/Software</h2>
+  <div class="additional-content">
+    <p>[article excerpt and link]</p>
+  </div>
+</div>
+
+<div class="article" onclick="toggleContent(this)">
+  <h2>Upcoming Events</h2>
+  <div class="additional-content">
+    <p>[Insert list of upcoming events, conferences, workshops etc...]</p>
+  </div>
+</div>
+
+<div class="article" onclick="toggleContent(this)">
+  <h2>Job Opportunities & Career Help</h2>
+  <div class="additional-content">
+    <!-- Add the content for Job Opportunities & Career Help here -->
+  </div>
+</div>
+
+<div class="article" onclick="toggleContent(this)">
+  <h2>Community Showcase</h2>
+  <div class="additional-content">
+    <p>[If any!]</p>
+  </div>
+</div>
+<script>
+  function toggleContent(element) {
+    element.classList.toggle("clicked");
+  }
+</script>
+</body>
+</html>

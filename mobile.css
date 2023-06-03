@@ -58,7 +58,6 @@ h2 {
   background-color: #555;
 }
 
-/* Adjust social media icons */
 .social-media {
   margin-top: 2em;
 }
@@ -70,9 +69,7 @@ h2 {
   color: #333;
 }
 
-/* Remove background image */
 .home-img {
   display: none;
 }
 
-/* Add any additional mobile-specific styles here */

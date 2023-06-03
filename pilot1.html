@@ -1,6 +1,5 @@
 <html>
 <body>
-<img src="https://rakindukuri.files.wordpress.com/2023/04/fixa1.png" style="width: 100%; position: relative;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobile.css" media="(max-width: 800px)">
@@ -8,9 +7,6 @@
 
 <div style="background: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 86%; padding: 2em;">
 <section>
-      <div class="home-img">
-        <img src="https://rakindukuri.files.wordpress.com/2023/04/pic.jpeg" alt="">
-    </div>
     <style>
   .social-media {
     display: flex;
@@ -80,7 +76,7 @@
         <div class="typing-text"></div>
     <br>
     <br>
-    <!-- <h2> Interested in Data Science, Machine Learning, and Bioinformatics</h2>-->
+    <h2> Interested in Data Science, Machine Learning, and Bioinformatics</h2>
     <div class="scroll-text">
   <h3 class="small-text"><span class="fixed-text"></span> <span class="scrolling-text"></span></h3>
 
@@ -110,87 +106,5 @@
 </div>
   </section>
 </div>
-<script>
-<script>
-  // Check the viewport width
-  var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-
-  // Set the threshold width for non-desktop devices
-  var thresholdWidth = 900; // Adjust this value as needed
-
-  // Redirect non-desktop users
-  if (viewportWidth < thresholdWidth) {
-    window.location.href = "pilot1.html";
-  }
-</script>
-
-  // Define the words to be displayed
-  const words = [
-    "\"Exploring the realms of Computational Biology\"",
-    "\"Pushing the boundaries in Machine Learning and AI\"",
-    "\"Mastering the art of Programming\"",
-    "\"Reimagining the future of Personalized Medicine\"",
-    "\"Challenging the norms in Cancer Genomics\""
-  ];
-
-  // Shuffle the words array
-  const shuffledWords = shuffleArray(words);
-
-  // Get the scrolling text element
-  const scrollingText = document.querySelector('.scrolling-text');
-
-  // Set up the typing effect
-  let wordIndex = 0;
-  let charIndex = 0;
-  let typingSpeed = 15; // Adjust the typing speed (in milliseconds) here
-  let freezeDuration = 4200; // Adjust the duration to freeze (in milliseconds) here
-
-  function shuffleArray(array) {
-    const newArray = [...array];
-    for (let i = newArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-    }
-    return newArray;
-  }
-
-  function typeText() {
-    if (charIndex < shuffledWords[wordIndex].length) {
-      scrollingText.textContent += shuffledWords[wordIndex].charAt(charIndex);
-      charIndex++;
-      setTimeout(typeText, typingSpeed);
-    } else {
-      setTimeout(freezeText, freezeDuration);
-    }
-  }
-
-  function freezeText() {
-    setTimeout(eraseText, typingSpeed);
-  }
-
-  function eraseText() {
-    if (charIndex > 0) {
-      scrollingText.textContent = scrollingText.textContent.slice(0, -1);
-      charIndex--;
-      setTimeout(eraseText, typingSpeed / 4);
-    } else {
-      wordIndex++;
-      if (wordIndex >= shuffledWords.length) {
-        wordIndex = 0;
-      }
-      setTimeout(typeText, typingSpeed);
-    }
-  }
-
-  // Start the scrolling animation
-  scrollingText.addEventListener('animationstart', () => {
-    scrollingText.style.animationPlayState = 'running';
-  });
-
-  // Start the typing effect
-  typeText();
-</script>
-
 </body>
 </html>
-
